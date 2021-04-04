@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+body{
+  margin:0;
+  padding:0;
+}
+
+/* card */
+.temp-detail h4{
+    position: relative;
+    width: max-content;
+}
+.temp-detail{
+    position: relative;
+}
+.temp{
+    width:260px;
+    height: 170px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.2);
+}
+.temp .temp-detail{
+    /* float:right;
+    right: 25px;
+    bottom: 5px; */
+    left: 5%;
+}
+.minMax{
+  float: left;
+  width: 40%;
+}
+.tempVal{
+  float:  left;
+  left: 400px;
+}
+.temp .temphead{
+    width:100%;
+    position: relative;
+    text-align: -webkit-center
+}
+.temp .temphead h2{
+  left: 25%;
+}
+.card{
+    position:inherit;
+    padding-bottom: 10px;
+}
+
+ /* sidebar */
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(180, 211, 253);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+ 
+  .package-heading{
+    padding:5px;
+    background-color: #337ab7;
+    top:20px;
+    position: relative;
+  }
+  
+  .heading{
+   
+    text-align: center;
+      width: fit-content;
+      position: relative;
+      left: 480px;
+      bottom: 30px;
+  }
+  .heading h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .mainSec{
+      position: relative;
+      top: 20px;
+      margin-bottom: 20px;
+  }
+  .container{
+    display:flex;
+    flex-wrap:nowrap;
+    align-content: flex-start;
+
+  }
+
+
+  /* The <div> will not be visible until the compilation is done. */
+  [v-cloak] {
+    display: none;
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>One View</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- vuejs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="asset/css/dashboard.css">
+</head>
+
+<body>
+<div id="app" v-cloak class="wrapper-class">
+
+
+    <!-- sidebar body -->
+	<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="cardpage.html">DashBoard</a>
+        </div>
+
+        <div class="package-heading">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <div class="heading">
+                    <h2>Temperature List</h2>
+                </div>
+            </div>
+
+
+
+    <div class="container">
+        <div class="mainSec">
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12" v-for=" item in details.forecasts" >
+
+                <div class="temp">
+                    <div class="temphead">
+                        <h2>{{item.day}}</h2>
+                    </div>
+                    <div class="temp-detail">
+                        <div class="minMax">
+                        <h4>Min </h4>
+                        <h4>Max </h4>
+                        <h4>weather </h4>    
+                    </div>
+
+                        <div class="tempVal"> 
+                            <h4>{{item.low}}</h4>
+                            <h4>{{item.high}}</h4>
+                            <h4>{{item.text}}</h4>
+                        </div>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+    </div>
+
+
+
+
+    </div>
+    <script src="asset/js/dash.js"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+</body>
+
+</html>

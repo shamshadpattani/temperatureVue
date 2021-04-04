@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+body{
+  margin:0;
+  padding:0;
+}
+.package-heading{
+  padding:5px;
+  background-color: #337ab7;
+  position: relative;
+}
+
+.heading{
+ 
+  text-align: center;
+    width: fit-content;
+    position: relative;
+    left: 480px;
+    bottom: 30px;
+}
+.heading h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+.package-body{
+  /* padding-top: 50px;
+  top: 145px; */
+
+  padding-top: 12px;
+}
+
+.common-div{
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+.btn-add{
+  position: relative;
+  float: right;
+  right: 307px;
+  top:20px;
+}
+.btn-add button{
+
+  font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color:rgba(8, 10, 88, 0.931);
+    background-color: rgb(222, 223, 224);
+    border: 1px;
+    -webkit-transition: width 2s, height 2s; 
+    transition: width 2s, height 2s;
+   
+}
+
+.btn-add button:hover{
+  font-size: 20px;
+  
+    
+    -webkit-transition: width 2s, height 4s; 
+    transition: width 2s, height 2s;
+    opacity: 1;
+  /* color: #fff; */
+ 
+}
+.table-div{
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.table-div table{
+  position: relative;
+  left: 240px; 
+   width: 60%;
+   border-width: 2px;
+   text-align: center;
+}
+.table-div table thead{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 18px;
+  color: #0c0b0be3;
+  font-weight: bold;
+}
+
+.table-div tbody td{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.table-div span{
+  color:#000;
+}
+table td button{
+  background-color: #ecf2f3;
+    border: none; 
+    font-size: medium;
+}
+table td button:hover{
+  background-color: #0ba4b55b;
+    border: none; 
+    font-size: x-large;
+}
+.modal-body h4{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
+  color: #337ab7;
+  font-weight: bold;
+}
+.modal-body input{
+  border-radius:10px;
+  font-size: 12px;
+  text-align: center;
+}
+.table-div table tbody tr{
+  height: 30px;
+}
+
+/* -----------card body------------ */
+
+ .bodydiv{
+  background-color:#465050;
+   top:5px;
+   position: relative;
+   height:fit-content;
+   }
+.container{
+  
+  position: relative;
+  top:20px;
+
+}
+.card{
+  border-color:#fff;
+  border:2;
+  width: 300px;
+  position: relative;
+    left: 5px;
+}
+.card-body1{
+ 
+  position:relative;
+  height: -webkit-fill-available;
+}
+.pack1{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width:100%;
+}
+ 
+.card-title {
+  
+  width:100%; 
+  height: 175px;
+position: relative;
+bottom: 0;
+color:#fff;
+background: rgba(0, 0, 0, 0.42);
+text-align:center;
+margin-bottom:0; 
+     -webkit-transition: all 0.3s ease-in-out; 
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.card-title h2{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+  width: fit-content;
+  position: relative;
+  top: 70px;
+}
+.packhead{
+  width: min-content;
+  position: relative;
+  bottom: 16px;
+  left: 5px;
+}
+.pack-detail{
+  position:relative;
+}
+
+
+.card-title h4{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+  width: fit-content;
+  position: relative;
+  bottom: 30px;
+  left: 207px;
+}
+ 
+  /* sidebar */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(180, 211, 253);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .tab{
+    border-collapse: collapse;
+    width: 50%;
+    counter-reset: serial-number;
+
+
+
+}
+.tab tbody td:first-child:before {
+  counter-increment: serial-number;
+  content: counter(serial-number);  
+}
+
+/* -----edit modal----- */
+
+ .modal-content-edit{
+
+  position: relative;
+  color:#1b242c; 
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width:65%;
+  padding-bottom: 10px;
+}
+
+
+.modal-title{
+  position: relative;
+  color: #337ab7;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.modal-dialog form{
+  position: relative;
+    left: 29%;
+   
+}
+form input{
+  width: 160px;
+  height: 30px;
+}
+ .button1{
+  width: 105px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    left: 20px;
+    position: relative;
+}
+form h4{
+  font-family: 'Open Sans', sans-serif;
+  color: #0b0c0e;
+  font-size: larger;
+  font-weight: 600;
+}
+form{
+  width: fit-content;
+}
+form input{
+  border-radius: 3px;
+}
+
+.deleteMsg{
+  font-size: 17px;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+}
+.button{
+  position: relative;
+    width: 18%;
+    left: 32%;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.modal-header .close {
+  margin-top: -15px;
+}
+
+  /* The <div> will not be visible until the compilation is done. */
+  [v-cloak] {
+    display: none;
+  }
